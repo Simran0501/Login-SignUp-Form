@@ -9,11 +9,11 @@ app.get('/', function(req, res) {
     res.set({
         'Access-Control-Allow-Origin' : '*'
     });
-    return res.redirect('/public/register.html');
+    return res.redirect('/public/index.html');
 
 }).listen(5000);
 
-console.log("Server listening at : 3000");
+console.log("Server listening at : 5000");
 app.use('/public', express.static(__dirname + '/public'));
 app.use('/css', express.static(__dirname + '/css'));
 app.use( bodyParser.json() );
